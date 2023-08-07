@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="nameInput">Choose expenseamount:</label>
+        <!-- <input type="text" id="nameInput" name="name" required> -->
+        <input type="number" id="nameInput" name="name" min="0" max="1000" step="1">
+        <label for="emailInput">Choose description:</label>
+        <!-- <input type="text" id="emailInput" name="email" min="0" max="1000" step="1"> -->
+        <!-- <input type="email" id="emailInput" name="email" required> -->
+        <select name="email" id="emailInput">
+            <option value="sads">sads</option>
+            <option value="Petrol" selected>Petrol</option>
+            <option value="On vacation">On vacation</option>
+            <option value="diesel">diesel</option>
+            <option value="hallo">hallo</option>
+            <option value="1233">1233</option>
+          </select>
+          
+        <label for="phoneInput">Choose a category:</label>
+        <select name="phone" id="phoneInput">
+            <option value="fuel">fuel</option>
+            <option value="food" selected>food</option>
+            <option value="electricity">electricity</option>
+            <option value="Movie">Movie</option>
+        </select>
+        <!-- <input type="tel" id="phoneInput" name="phone" required> -->
+        
+        <input type="submit" value="Add Expense">
+    </form>
+    <!-- The container to display submitted data -->
+    <div id="output"></div>
+
+    <script src="Dom.js"></script>
+</body>
+</html>
